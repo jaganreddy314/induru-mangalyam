@@ -1,0 +1,26 @@
+{
+  "name": "induru-mangalyam",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:pwa": "npm run dev -w @induru/pwa",
+    "dev:admin": "npm run dev -w @induru/admin",
+    "build": "npm run build -w @induru/pwa && npm run build -w @induru/admin",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test:db": "node --test tests/db/*.test.js",
+    "test": "npm run test:db",
+    "dev:backend": "node scripts/dev-backend.mjs",
+    "dev:backend:reset": "node scripts/dev-backend.mjs --reset"
+  },
+  "devDependencies": {
+    "pg": "^8.13.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

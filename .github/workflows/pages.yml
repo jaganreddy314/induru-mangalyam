@@ -1,0 +1,59 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # Public client values only (Settings → Secrets and variables → Actions → Variables).
+      VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+      VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
+      VITE_TESTER_MODE: ${{ vars.VITE_TESTER_MODE }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - name: Build family app
+        run: npm run build -w @induru/pwa
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/app/
+      - name: Build staff console
+        run: npm run build -w @induru/admin
+        env:
+          BASE_PATH: /${{ github.event.repository.name }}/admin/
+      - name: Assemble site
+        run: |
+          mkdir -p site
+          cp deploy/pages/index.html deploy/pages/404.html site/
+          cp -r apps/pwa/dist site/app
+          cp -r apps/admin/dist site/admin
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Induru Mangalyam</title>
+    <script>
+      // GitHub Pages has no SPA fallback: send deep links back to the right app as ?p=<path>.
+      (function () {
+        var l = window.location;
+        var m = l.pathname.match(/^(\/[^/]+\/)(app|admin)\/(.*)$/);
+        if (!m) { l.replace('/' + (l.pathname.split('/')[1] || '') + '/'); return; }
+        l.replace(m[1] + m[2] + '/?p=' + encodeURIComponent(m[3] + l.search) + l.hash);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

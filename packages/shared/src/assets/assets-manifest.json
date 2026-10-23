@@ -1,0 +1,200 @@
+{
+  "version": "1.0.0",
+  "note": "Original in-house concept artwork created for the MVP from the Design Asset & Visual Language Guide v1.0. Treat as placeholders until produced/reviewed by a designer (guide \u00a711). No stock, photographs, faces, religious symbols or real landmarks.",
+  "owner": "Induru Mangalyam",
+  "license": "Proprietary \u2014 owned by the service operator",
+  "assets": [
+    {
+      "path": "brand/app-icon-1024.png",
+      "type": "brand",
+      "source": "rendered from brand/mark-on-maroon.svg",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review; check launcher masks on Android/iOS"
+    },
+    {
+      "path": "brand/logo-monochrome-white.svg",
+      "type": "brand",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "brand/logo-monochrome.svg",
+      "type": "brand",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "brand/logo-primary.svg",
+      "type": "brand",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "brand/logo-telugu.svg",
+      "type": "brand",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review + native Telugu proofreading"
+    },
+    {
+      "path": "brand/mark-on-maroon.svg",
+      "type": "brand",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "brand/mark-only.svg",
+      "type": "brand",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "decor/floral-divider.svg",
+      "type": "decor",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "decor/turmeric-corner.svg",
+      "type": "decor",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "heritage/indhur-horizon.svg",
+      "type": "heritage",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "icons/broker-assisted.svg",
+      "type": "icons",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "icons/candidate-approved.svg",
+      "type": "icons",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "icons/contact-private.svg",
+      "type": "icons",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "icons/turmeric-leaf.svg",
+      "type": "icons",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "icons/verified-family.svg",
+      "type": "icons",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "illustrations/candidate-consent.svg",
+      "type": "illustrations",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "illustrations/empty-matches.svg",
+      "type": "illustrations",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "illustrations/family-invitation.svg",
+      "type": "illustrations",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "illustrations/family-verification.svg",
+      "type": "illustrations",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "illustrations/meeting-scheduled.svg",
+      "type": "illustrations",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "illustrations/mutual-introduction.svg",
+      "type": "illustrations",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "illustrations/privacy-lock.svg",
+      "type": "illustrations",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "patterns/field-contours.svg",
+      "type": "patterns",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    },
+    {
+      "path": "patterns/turmeric-line-repeat.svg",
+      "type": "patterns",
+      "source": "hand-authored SVG",
+      "author": "in-house (engineering)",
+      "license": "proprietary",
+      "review": "pending designer review"
+    }
+  ]
+}

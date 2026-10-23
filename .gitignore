@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.env.local
+*.local
+supabase/.temp/
+supabase/.branches/
+.DS_Store
+.dev-storage/
+
+# Product spec and design handoff stay private (public repo)
+*.docx
+design_handoff_induru_mangalyam/

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" fill="none" aria-hidden="true">
+  <!-- Original conceptual agricultural horizon. Not a depiction of any specific landmark. -->
+  <circle cx="380" cy="58" r="22" stroke="#C99A42" stroke-width="1.5"/>
+  <path d="M0 70c80-18 160-18 240-6s160 10 240-4" stroke="#C99A42" stroke-width="1.5"/>
+  <g stroke="#C99A42" stroke-width="1.25" stroke-opacity=".8">
+    <path d="M0 86c90-14 170-12 250-2s150 8 230-4"/>
+    <path d="M0 100c90-14 170-12 250-2s150 8 230-4"/>
+    <path d="M0 114c90-14 170-12 250-2s150 8 230-4"/>
+  </g>
+  <g stroke="#C99A42" stroke-width="1.25" stroke-linejoin="round"><g transform="translate(60 56) rotate(-10)"><path d="M0 18C-8 10-8-4 0-18 8-4 8 10 0 18z"/><path d="M0 16V-16"/></g><g transform="translate(76 58) rotate(14)"><path d="M0 18C-8 10-8-4 0-18 8-4 8 10 0 18z"/><path d="M0 16V-16"/></g><g transform="translate(150 54) rotate(-6)"><path d="M0 18C-8 10-8-4 0-18 8-4 8 10 0 18z"/><path d="M0 16V-16"/></g><g transform="translate(300 52) rotate(8)"><path d="M0 18C-8 10-8-4 0-18 8-4 8 10 0 18z"/><path d="M0 16V-16"/></g></g>
+</svg>

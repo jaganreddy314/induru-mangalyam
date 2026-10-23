@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none" role="img" aria-label="Induru Mangalyam mark (monochrome)">
+  <title>Induru Mangalyam mark (monochrome)</title>
+  
+  <!-- turmeric (pasupu) leaves -->
+  <path d="M60 108C34 98 20 70 28 30c18 14 30 40 32 78z" fill="#27272A" fill-opacity=".16" stroke="#27272A" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M60 106C50 80 41 57 30 34" stroke="#27272A" stroke-width="1.75" stroke-linecap="round"/>
+  <path d="M68 108c26-10 40-38 32-78-18 14-30 40-32 78z" fill="#27272A" fill-opacity=".16" stroke="#27272A" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M68 106c10-26 19-49 30-72" stroke="#27272A" stroke-width="1.75" stroke-linecap="round"/>
+  <!-- marriage knot: two interlaced loops -->
+  <circle cx="55" cy="68" r="15" stroke="#27272A" stroke-width="5"/>
+  <circle cx="73" cy="68" r="15" stroke="#27272A" stroke-width="5"/>
+  <path d="M64 56.2a15 15 0 0 1 0 23.6" stroke="#27272A" stroke-width="5" stroke-linecap="round"/>
+  <!-- thread and bindu -->
+  <path d="M64 84v18" stroke="#27272A" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="64" cy="40" r="5" fill="#27272A"/>
+</svg>
