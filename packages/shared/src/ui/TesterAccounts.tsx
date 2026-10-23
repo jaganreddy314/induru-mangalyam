@@ -17,7 +17,7 @@ export function TesterAccounts({ accounts, onPick, code = '123456' }: { accounts
             <span>{a.label}</span><span className="num muted">{a.phone}</span>
           </button>
         ))}
-        <p className="xsmall muted" style={{ marginTop: 6 }}>Fictitious demo data, local development only. Any new number also works with the same code.</p>
+        <p className="xsmall muted" style={{ marginTop: 6 }}>Fictitious demo data for testing only. Only the numbers listed here receive this code.</p>
       </div>
     </details>
   );

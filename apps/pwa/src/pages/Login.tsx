@@ -16,6 +16,7 @@ const TESTERS: TesterAccount[] = [
   { phone: '+919000000032', label: 'Sravani — candidate, Gaddam' },
   { phone: '+919000000041', label: 'Bheemana — pending application' },
   { phone: '+919000000051', label: 'New member — apply from scratch' },
+  { phone: '+919000000052', label: 'Second new member — apply from scratch' },
 ];
 
 /** M03 — masked number, visible resend timer, retry cap explained; session only after verified OTP. */

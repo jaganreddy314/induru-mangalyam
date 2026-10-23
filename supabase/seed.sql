@@ -36,6 +36,9 @@ begin
       select u.id::text, u.id, jsonb_build_object('sub', u.id::text, 'phone', u.phone, 'phone_verified', true), 'phone', now(), now(), now()
       from auth.users u where u.id::text like '00000000-0000-4000-8000-%'
       on conflict do nothing $q$;
+    -- Hosted TOTP enrolment labels the factor with the account email; phone-only staff need a placeholder.
+    execute $q$ update auth.users set email = 'demo-staff-' || right(id::text, 2) || '@induru.invalid', email_confirmed_at = now()
+      where id::text like '00000000-0000-4000-8000-0000000000_%' and right(id::text, 2) between '01' and '04' $q$;
   end if;
 end $$;
 

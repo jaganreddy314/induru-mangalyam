@@ -72,6 +72,22 @@ Demo accounts (all fictitious, OTP **123456**, from `supabase/config.toml`):
 | +91 90000 00001 | Super admin | Admin app (enrol TOTP on first sign-in) |
 | +91 90000 00002 / 03 / 04 | Verifier / Broker / Moderator | Admin app |
 
+## Live demo (GitHub Pages)
+
+- Family app: https://jaganreddy314.github.io/induru-mangalyam/app/
+- Staff console: https://jaganreddy314.github.io/induru-mangalyam/admin/
+
+Every push to `main` runs `.github/workflows/pages.yml`, which builds both apps under
+`/<repo>/app/` and `/<repo>/admin/` (`BASE_PATH`) and publishes them with a landing page and a
+`404.html` that sends deep links back to the right app. The build reads repository **variables**
+(not secrets — they are public client values): `VITE_SUPABASE_URL`, `VITE_SUPABASE_ANON_KEY`
+(publishable key) and `VITE_TESTER_MODE=true`, which shows the tester-accounts panel.
+
+The demo backend is the hosted Supabase project `induru-mangalyam` (Mumbai) with the fictitious seed.
+Phone sign-in only works for the Supabase test numbers in `supabase/config.toml` (code 123456); no real
+SMS is sent. Staff accounts enrol a real authenticator app (TOTP) on first sign-in. Before real families
+use it: configure an SMS provider, remove the test OTP numbers, turn `VITE_TESTER_MODE` off and reseed.
+
 ## Hosted Supabase setup
 
 1. `supabase link --project-ref <ref>` then `supabase db push` (applies `supabase/migrations`).

@@ -14,7 +14,8 @@ export function getSupabase(): SupabaseClient {
     throw new Error('VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY must be set (see .env.example).');
   }
   client = createClient(url, anonKey, {
-    auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false },
+    // Own key per app: on GitHub Pages both apps share one origin and would otherwise share a session.
+    auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false, storageKey: `induru-auth-${import.meta.env.VITE_APP_ID ?? 'app'}` },
     global: {
       fetch: (input, init) => {
         const headers = new Headers(init?.headers);

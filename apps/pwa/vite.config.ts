@@ -5,6 +5,9 @@ import { VitePWA } from 'vite-plugin-pwa';
 // BASE_PATH lets the GitHub Pages build live under /<repo>/app/.
 const base = process.env.BASE_PATH ?? '/';
 
+// Separates this app's stored session from the other app on the same origin.
+process.env.VITE_APP_ID ??= 'pwa';
+
 export default defineConfig({
   base,
   plugins: [

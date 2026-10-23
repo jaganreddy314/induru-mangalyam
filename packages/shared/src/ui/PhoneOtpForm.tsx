@@ -123,7 +123,7 @@ export function PhoneOtpForm({ lockedPhone, onVerified, submitLabel, screen, def
             ? <><span>{t('auth.resendIn', { seconds: wait })}</span><span style={{ color: 'var(--control)' }}>{t('auth.resend')}</span></>
             : <><span /><button type="button" className="link" disabled={busy} onClick={() => send()}>{t('auth.resend')}</button></>}
         </div>
-        {testerCode ? <Notice tone="info" icon="key">Tester code: <strong className="num">{testerCode}</strong> (local development only)</Notice> : null}
+        {testerCode ? <Notice tone="info" icon="key">Tester code: <strong className="num">{testerCode}</strong> (demo accounts only)</Notice> : null}
         {safety}
         {error === t('auth.tooMany') ? <Notice tone="error">{t('auth.tooMany')}</Notice> : null}
       </div>

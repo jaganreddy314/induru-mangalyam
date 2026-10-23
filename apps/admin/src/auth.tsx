@@ -130,7 +130,7 @@ function Centered({ children }: { children: ReactNode }) {
 function Brand() {
   return (
     <div className="row">
-      <img src="/favicon.svg" alt="" width={40} height={40} style={{ borderRadius: 10 }} />
+      <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" width={40} height={40} style={{ borderRadius: 10 }} />
       <span className="brand-display" style={{ fontSize: '1.375rem', color: 'var(--maroon)' }}>Induru Mangalyam · Staff</span>
     </div>
   );
